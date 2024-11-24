@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.6</version> <!-- Asegúrate de tener la versión correcta de Spring Boot -->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>pe.edu.i202123054</groupId> <!-- Corrige el groupId aquí sin el punto inicial -->
+	<artifactId>cl1-jpa-data-lavandera-joaquin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>cl1-jpa-data-lavandera-joaquin</name>
+	<description>Demo project for Spring Boot with JPA and MySQL</description>
+
+	<properties>
+		<java.version>23</java.version> <!-- Asegúrate de tener la versión correcta de Java -->
+		<spring-boot.version>3.3.6</spring-boot.version> <!-- Versión de Spring Boot -->
+	</properties>
+
+	<dependencies>
+		<!-- Spring Boot Starter Web (si necesitas soporte para REST, etc.) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Data JPA (para trabajar con bases de datos) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- MySQL Connector (controlador JDBC para MySQL) -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<!-- Lombok (para simplificar el código generado) -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Spring Boot Starter Test (opcional, para pruebas unitarias y de integración) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Spring Boot Maven Plugin (para ejecutar el proyecto desde la terminal) -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version> <!-- Usa la propiedad de la versión de Spring Boot -->
+			</plugin>
+		</plugins>
+	</build>
+</project>
